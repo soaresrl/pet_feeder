@@ -1,0 +1,76 @@
+.content {
+  display: grid;
+
+  grid-template-areas: 
+  "header header"
+  "dashboard dashboard"
+  "footer footer";
+
+}
+
+.content > .header{
+  grid-area: header;
+  padding-right: 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+
+  height: 60px;
+  background-color: #242582;
+}
+
+.header > p {
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.header > p:hover {
+  opacity: 0.5;
+}
+
+.header > .profile {
+  margin-top: 7px;
+  padding: 5px;
+  height: 30px;
+  
+  border-radius: 15px;
+  background-color: #f64c72;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.header > .profile:hover {
+  opacity: 0.8;
+}
+
+.profile > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.profile > span:hover{
+  opacity: 0.5;
+}
+
+.content > .dashboard{
+  grid-area: dashboard;
+
+  height: calc(100vh - 90px);
+  width: 100vw;
+  background-color: #242582;
+}
+
+.content > .footer{
+  grid-area: footer;
+
+  height: 30px;
+  background-color: red;
+}
